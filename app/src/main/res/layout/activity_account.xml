@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.sample.version16.Account"
+    android:background="@drawable/bg_orange">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Welcome, Name"
+        android:id="@+id/tvWelcome"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notifications"
+        android:id="@+id/btnNotification"
+        android:background="@android:drawable/dialog_holo_dark_frame"
+        android:textColor="#ffffffff"
+        android:padding="20dp"
+        android:layout_below="@+id/btnProfile"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Application Status"
+        android:id="@+id/btnApplicationStatus"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnNotification"
+        android:layout_alignParentLeft="true"
+        android:background="@android:drawable/dialog_holo_dark_frame"
+        android:textColor="#ffffffff"
+        android:padding="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message Box (0 New)"
+        android:id="@+id/btnInbox"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnApplicationStatus"
+        android:layout_alignParentLeft="true"
+        android:background="@android:drawable/dialog_holo_dark_frame"
+        android:textColor="#ffffffff"
+        android:padding="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Message"
+        android:id="@+id/btnSendMail"
+        android:background="@android:drawable/dialog_holo_dark_frame"
+        android:textColor="#ffffffff"
+        android:padding="20dp"
+        android:layout_alignTop="@+id/btnInbox"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post To Forum"
+        android:id="@+id/btnNewPost"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnSendMail"
+        android:layout_alignParentLeft="true"
+        android:background="@android:drawable/dialog_holo_dark_frame"
+        android:textColor="#ffffffff"
+        android:padding="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Follow-up Question"
+        android:id="@+id/btnFollowup"
+        android:background="@android:drawable/dialog_holo_dark_frame"
+        android:textColor="#ffffffff"
+        android:padding="20dp"
+        android:layout_below="@+id/btnInbox"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COMPLETE PROFILE"
+        android:id="@+id/btnProfile"
+        android:background="@android:drawable/dialog_holo_dark_frame"
+        android:textColor="#ffffffff"
+        android:padding="20dp"
+        android:layout_below="@+id/btnLogout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOG OUT"
+        android:id="@+id/btnLogout"
+        android:layout_below="@+id/tvWelcome"
+        android:layout_alignRight="@+id/tvWelcome"
+        android:layout_alignEnd="@+id/tvWelcome"
+        android:background="@android:drawable/dialog_holo_dark_frame"
+        android:textColor="#ffffffff"
+        android:padding="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Since its your FIRST LOGIN, you need to enter your complete information for further usage."
+        android:id="@+id/tvFirstInstruction"
+        android:visibility="visible"
+        android:padding="20dp"
+        android:background="@android:drawable/alert_light_frame"
+        android:layout_alignBaseline="@+id/btnApplicationStatus"
+        android:layout_alignBottom="@+id/btnApplicationStatus"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivArrow"
+        android:background="@drawable/arrow_curved"
+        android:layout_toRightOf="@+id/btnApplicationStatus"
+        android:layout_alignTop="@+id/btnProfile"
+        android:layout_above="@+id/btnApplicationStatus"
+        android:layout_alignRight="@+id/tvFirstInstruction"
+        android:layout_alignEnd="@+id/tvFirstInstruction" />
+
+</RelativeLayout>
